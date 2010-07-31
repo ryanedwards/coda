@@ -1,0 +1,143 @@
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\tx284\tx568\tx852\tx1136\tx2840\tx4544\tx7952\lang1033\b\f0\fs22 Command\tab\tab Menu Item\tab Action\tab Command Details\b0\fs20\par
+DIVIS\tab\tab\tab\tab\tab Divisors\tab Returns a list containing the expressions or integers that exactly divide into the input.\b\par
+\b0 FACTORS\tab\tab\tab Prime Factors\tab For a value or expression, returns a list of prime factors and their multiplicities.\par
+\par
+\par
+\b Parts\b0\par
+\tab IP\tab\tab\tab\tab\tab Get Integer Part\tab Returns the integer part of its argument.\par
+\tab FP\tab\tab\tab\tab\tab Get Fractional Part\tab Returns the fractional part of the argument.\par
+\tab IM\tab\tab\tab\tab\tab Get Imaginary Part\tab Returns the imaginary part of a complex argument.\par
+\tab RE\tab\tab\tab\tab\tab Get Real Part\tab Returns the real part of the argument.\par
+\tab MANT\tab\tab\tab\tab Get Mantissa Part\tab Returns the mantissa part of the argument.\par
+\tab XPON\tab\tab\tab\tab Get Exponent Part\tab Returns the exponent of the argument.\par
+\tab SIGN\tab\tab\tab\tab Get Sign\tab Returns the sign of a real number argument, or the unit vector in the direction of a complex number argument.\par
+\tab FXND\tab\tab\tab\tab Split Fraction\tab Splits a fractional object into its numerator and denominator.\par
+\tab EQ\u8594?\tab\tab\tab\tab Split Expression Left/Right\tab Separates an equation into its left and right sides.\par
+\tab EXLR\tab\tab\tab\tab Split Expression Left/Right\tab Splits the left- and right-hand sides of an equation into discrete expressions. If input is not an equation, returns the indep. variable.\par
+\par
+\b\par
+Integer\b0\par
+\tab IDIV2\tab\tab\tab\tab Integer Divide (Quotient & Remainder)\tab Divides two integers and returns the integer part of the quotient and the remainder.\par
+\tab IQUOT\tab\tab\tab Integer Divide (Quotient Only)\tab Divides two integers and returns the integer part of the quotient.\par
+\tab IREMAINDER\tab\tab Integer Divide (Remainder Only)\tab Divides two integers and returns the remainder.\par
+\par
+\tab NEXTPRIME\tab\tab Get Next Prime\tab Return the next prime number larger than the given integer.\par
+\tab PREVPRIME\tab\tab Get Previous Prime\tab Return the next prime number smaller than the given integer.\par
+\tab ISPRIME?\tab\tab Test for Prime\tab Tests if a number is prime.\par
+\tab PA2B2\tab\tab\tab\tab Given a prime number p, returns a Gaussian integer a+ib such that p=a^2+b^2.\par
+\par
+\tab EULER\tab\tab\tab Euler's Totient Function\tab For a given integer, returns the number of integers less than the integer that are co-prime with the integer.\par
+\tab IBERNOULLI\tab\tab Get nth Bernoulli Number\tab Returns the nth Bernoulli number for a given integer.\par
+\tab ICHINREM\tab\tab Integer Chinese Remainder\tab Solves a system of two congruences in integers using the Chinese Remainder theorem.\par
+\tab IABCUV\tab\tab\tab\tab From integers a, b and c, gives integers u and v such that au+bv=c.\par
+\tab IEGCD\tab\tab\tab\tab Given two integers x and y, returns three integers, a, b, and c, such that ax+by=c where c is the GCD of x and y.\b\par
+\par
+\par
+Probability\par
+\b0\tab COMB\tab\tab\tab Combinations\tab Returns the number of possible combinations of n items taken m at a time.\par
+\tab PERM\tab\tab\tab Permutations\tab Returns the number of possible permutations of n items taken m at a time.\par
+\tab RAND\tab\tab\tab\tab Get Random Number\tab Returns a pseudo-random number generated using a seed value, and updates the seed value.\par
+\tab RDZ\tab\tab\tab\tab Set Random Number Seed\tab Sets the seed used by the RAND command.\par
+\par
+\tab UTPC\tab\tab\tab\tab Upper Chi-Square Distribution\tab Returns the probability that a chi-square random variable is greater than x.\par
+\tab UTPF\tab\tab\tab\tab Upper Snedecor's F Distribution\tab Returns the probability that a Snedecor's F random variable is greater than x.\par
+\tab UTPN\tab\tab\tab\tab Upper Normal Distribution\tab Returns the probability that a normal random variable is greater than x.\par
+\tab UTPT\tab\tab\tab\tab Upper Student's t Distribution\tab Returns the probability that a Student's t random variable is greater than x.\par
+\par
+\tab CIRC\tab\tab\tab\tab Compose Permutation\tab Composes two permutations.\par
+\tab C2P\tab\tab\tab\tab Cycles to Permutation\tab Take a list of cycles and return the equivalent permutation.\par
+\tab P2C\tab\tab\tab\tab Permutation to Cycles\tab Decompose a permutation into lists that represent cycles.\par
+\par
+\tab !\tab\tab\tab\tab\tab Factorial (Gamma)\tab Returns the factorial n! of a positive integer argument, or the gamma function \u915?f0 (x+1) of a non-integer argument.\par
+\tab GAMMA\tab\tab\tab\u915? (Gamma)\tab Evaluates the gamma (\u915?) function at the given point.\par
+\tab Psi\tab\tab\tab\tab Digamma\tab Calculates the digamma function at the given point.. The digamma function is the derivative of the natural logarithm (ln) of the gamma function.\par
+\tab PSI\tab\tab\tab\tab Polygamma\tab Calculates the polygamma function at the given point. Polygamma is the nth derivative of the digamma function. PSI(a, 0) is equivalent to Psi(a).\par
+\par
+\par
+\b Modulo\par
+\b0\tab ADDTMOD\tab\tab Modulo Add\tab Adds two expressions, modulo the current modulus.\par
+\tab SUBTMOD\tab\tab Modulo Subtract\tab Perform a subtraction, modulo the current modulus.\par
+\tab MULTMOD\tab\tab Modulo Multiply\tab Multiplies two expressions, modulo the current modulus.\par
+\tab DIVMOD\tab\tab\tab Modulo Divide\tab Divides two expressions, modulo the current modulus.\par
+\tab POWMOD\tab\tab Modulo Power\tab Raise number or expression to given power, modulo the current modulus.\par
+\tab EXPANDMOD\tab\tab Modulo Expand Expression\tab Expand and simplify algebraic expressions, modulo the current modulus.\par
+\tab FACTORMOD\tab\tab Modulo Factor Polynomial\tab Factorizes a polynomial, modulo the current modulus.\par
+\tab GCDMOD\tab\tab Modulo Greatest Common Divisor\tab Returns the greatest common divisor of two objects, modulo the current modulus.\par
+\tab INVMOD\tab\tab\tab Modulo Inversion\tab Perform modular inversion on an object, modulo the current modulus.\par
+\tab RREFMOD\tab\tab Modulo Reduced Row Echelon Form\tab Performs modular row-reduction to echelon form on a matrix, modulo the current modulus.\par
+\tab DIV2MOD\tab\tab Modulo Euclidean Division\tab Performs euclidean division on two expressions, modulo the current modulus.\par
+\par
+\par
+\b Graph\par
+\b0\tab SIGNTAB\tab\tab\tab Expression Signs Table\tab Lists the points where an expression changes sign, and between each pair of points, the sign of the expression.\par
+\tab TABVAL\tab\tab\tab Substitute Values List into Expression\tab For an expression and a list of values, stores the expression in EQ, and returns the results of substituting the values for the current variable in the expression.\par
+\tab TABVAR\tab\tab\tab Expression Variation Table\tab Computes the variation table of an expression (the turning points of the function and where the function is increasing or decreasing).\par
+\par
+\par
+\b Polynomials\par
+\b0\tab DEGREE\tab\tab\tab Polynomial Degree\tab Returns the degree of a polynomial expression, or -1 if expression is zero.\par
+\tab DIV2\tab\tab\tab\tab Euclidean Division (Quotient & Rem.)\tab Performs euclidean division on two expressions.\par
+\tab QUOT\tab\tab\tab\tab Euclidean Division (Quotient Only)\tab Returns the quotient part of the Euclidean division of two polynomials.\par
+\tab REMAINDER\tab\tab Euclidean Division (Remainder Only)\tab Returns the remainder part of the Euclidean division of two polynomials.\par
+\par
+\tab EPSX0\tab\tab\tab\tab Replaces all coefficients in a polynomial that have an absolute value less than that held in the CASDIR variable EPS, with 0.\par
+\tab FROOTS\tab\tab\tab\tab For a rational polynomial, returns an array of its roots and poles, with their corresponding multiplicities. Inverse of FCOEF.\b\par
+\b0\tab FCOEF\tab\tab\tab\tab Creates a rational polynomial with leading coefficient 1, with specified set of roots/poles, and specified multiplicities. Inverse of FROOTS.\par
+\tab PROOT\tab\tab\tab Find Polynomial Roots\tab Given a polynomial's coefficients, returns its roots.\par
+\tab PCOEF\tab\tab\tab Find Polynomial Coefficients\tab Returns the coefficients of a monic polynomial (leading coefficient of 1) having given roots.\par
+\tab PEVAL\tab\tab\tab Evaluate Polynomial\tab Given the coefficients of a polynomial, evaluates at x.\par
+\tab STURMAB\tab\tab Find Polynomial Zeroes over Range\tab Finds the number of zeroes the given polynomial has over the given closed interval.\par
+\b\par
+\b0\tab ABCUV\tab\tab\tab\tab From polynomials a, b and constant c, give polynomials u and v such that au+bv=c.\par
+\tab EGCD\tab\tab\tab\tab\tab From polynomials a and b, returns polynomials u, v, and c, where au+bv=c and c is the GCD of a & b.\par
+\par
+\tab CHINREM\tab\tab Chinese Remainder\tab Solves a system of simultaneous polynomial congruences in the ring Z[x].\par
+\tab GBASIS\tab\tab\tab Gr\'f6bner Basis\tab Returns a set of polynomials that are a Gr\'f6bner basis G of the ideal I generated from an input set of polynomials F.\par
+\tab GREDUCE\tab\tab Gr\'f6bner Reduction\tab Reduces a polynomial with respect to a Gr\'f6bner basis.\par
+\tab HORNER\tab\tab\tab\tab Executes a Horner scheme on a polynomial.\par
+\tab RESULTANT\tab\tab\tab Returns the resultant of two polynomials. (The determinant of the Sylvester matrix of the two polynomials.)\par
+\tab STURM\tab\tab\tab Sturm's Sequences\tab Returns a list containing the Sturm's sequences and their multiplicities of a given polynomial.\par
+\par
+\tab CYCLOTOMIC\tab\tab Get Cyclotomic Polynomial\tab Returns the cyclotomic polynomial of the given order.\par
+\tab HERMITE\tab\tab Get Hermite Polynomial\tab Returns the nth Hermite polynomial.\par
+\tab LEGENDRE\tab\tab Get Legendre Polynomial\tab Returns the nth degree Legendre polynomial.\par
+\tab PTAYL\tab\tab\tab Get Taylor Polynomial\tab Returns the Taylor polynomial at x = a for given a and a specified polynomial.\par
+\tab TCHEBYCHEFF\tab\tab Get Tchebycheff Polynomial\tab Return the nth Tchebycheff polynomial.\par
+\par
+ \par
+\b List\par
+\tab Elements\par
+\tab\tab\b0 GET\tab\tab\tab Get Element\tab Returns the specified element from an array or list.\par
+\tab\tab GETI\tab\tab\tab Get Element & Increment Index\tab Returns the specified element from an array or list, a copy of the array or list and the index of the element after the specified one.\par
+\tab\tab HEAD\tab\tab\tab Get First Element\tab Returns the first element of a list or string.\par
+\tab\tab TAIL\tab\tab\tab Last Listed Elements\tab Returns all but the first element of a list or string.\b\par
+\tab\tab\b0 PUT\tab\tab\tab Put Element\tab Replaces the object at the specified position in the specified array or list with the given object.\par
+\tab\tab PUTI\tab\tab\tab Put Element & Increment Index\tab Replaces the object at the specified position in an array or list with a given object. Returns the new array, and the index of the next position in the array or list.\par
+\tab\tab SUB\tab\tab\tab Get Element Range\par
+\tab\tab REPL\tab\tab\tab Replace Element Range\tab Replaces a portion of the target object with the specified object.\par
+\tab\tab SIZE\par
+\tab\tab POS\tab\tab\tab Find Position of Character / Element\tab Returns the position of a substring within a string or the position of an object within a list.\b\par
+\par
+\b0\tab\b Procedures\b0\par
+\tab\tab DOLIST\tab\tab Do to List\tab Applies commands, programs, or user-defined functions to lists.\par
+\tab\tab DOSUBS\tab\tab Do to Sublist\tab Applies commands, programs, or user-defined functions to groups of elements in a list.\par
+\tab\tab NSUB\tab\tab\tab Number of Sublist\tab Provides a way to access the current sublist position during an iteration of a program or command applied using DOSUBS.\par
+\tab\tab ENDSUB\tab\tab End Sublist\tab Provides a way to access the total number of sublists contained in the list used by DOSUBS.\par
+\par
+\tab\tab SEQ\tab\tab\tab Sequential Calculation\tab Generates a list of results by repeatedly running a program or algebraic through a range of values.\par
+\tab\tab MAP\tab\tab\tab Apply Program to List\tab Applies the specified program to each item in a list of objects or values.\par
+\tab\tab STREAM\tab\tab Stream Execution\tab Applies the specified program to each item in a list, using the previously calculated value as an argument as well.\par
+\par
+\tab\b Math\par
+\tab\tab\b0\u931?LIST\tab\tab\tab List Sum\tab Returns the sum of the elements in a list.\par
+\tab\tab\u960?LIST\tab\tab\tab List Product\tab Returns the product of the elements in a list.\i\par
+\i0\tab\tab\u916?LIST\tab\tab\tab List Differences\tab Returns the first differences of all elements in a list.\par
+\tab\tab ADD\tab\tab\tab Add to List\tab Adds corresponding elements of two lists or adds a number to each of the elements of a single list.\par
+\tab\tab LGCD\tab\tab\tab Greatest Common Divisor (of List)\tab Returns the greatest common divisor of a list of expressions or values.\par
+\i\tab LIST\i0\u8594?\tab\tab\tab\tab\i Also in Type menu.\i0\par
+\tab\u8594?\i LIST\tab\tab\tab\tab Also in Type menu.\par
+\i0\tab SORT\tab\tab\tab\tab Ascending Order Sort\tab Sorts the elements in a list in ascending order.\par
+\tab REVLIST\tab\tab\tab Reverse List\tab Reverses the order of the elements in a list.\par
+}
+ 

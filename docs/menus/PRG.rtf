@@ -1,0 +1,331 @@
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\tx284\tx568\tx852\tx1136\tx2840\tx4544\tx7952\lang1033\b\f0\fs22 Command\tab\tab Menu Item\tab Action\tab Command Details\par
+\fs20 Stack\tab\tab\tab\tab Stack\b0\par
+\tab\b Duplicate\tab Dup\b0\par
+\tab\tab DUP\tab\tab\tab Duplicate 1 Object\tab Duplicate the object in level 1 of the stack.\par
+\tab\tab DUP2\tab\tab\tab Duplicate 2 Objects\tab Duplicates the objects in level 1 and level 2 of the stack.\par
+\tab\tab DUPN\tab\tab\tab Duplicate n Objects\tab Duplicates the objects in the first n levels of the stack.\par
+\tab\tab DUPDUP\tab\tab Duplicate 1 Object Twice\tab Duplicates the object in level 1 of the stack twice. Same as using the DUP command twice.\par
+\tab\tab NDUPN\tab\tab Duplicate 1 Object n Times, Return n\tab Duplicates an object n-1 times, and returns n. (There will be n copies of the object on the stack, and the value n on Level 1 afterwards.)\b\par
+\tab Drop\tab\tab\tab Drop\par
+\b0\tab\tab DROP\tab\tab\tab Drop Level 1 Object\tab Removes the object in Level 1 from the stack.\par
+\tab\tab NIP\tab\tab\tab Drop Level 2 Object\tab Removes the object in Level 2 from the stack.\par
+\tab\tab DROP2\tab\tab Drop Level 1 & 2 Objects\tab Removes the first two objects from the stack.\par
+\tab\tab DROPN\tab\tab Drop n Objects\tab Removes the first n objects from the stack.\par
+\tab\tab CLEAR\tab\tab Drop All Objects / Clear Stack\tab Removes all objects from the stack.\par
+\tab\b Pick\tab\tab\tab Pick\par
+\b0\tab\tab PICK\tab\tab\tab Get Level n Object\tab Returns a copy of the specified stack level to level 1.\par
+\tab\tab OVER\tab\tab\tab Get Level 2 Object\tab Returns a copy of the object in level 2 to level 1.\par
+\tab\tab PICK3\tab\tab\tab Get Level 3 Object\tab Returns a copy of the object in level 3 to level 1.\par
+\tab\tab UNPICK\par
+\tab\b Roll\tab\tab\tab Roll\b0\par
+\tab\tab ROLL\tab\tab\tab Roll Object Up\tab Moves the contents of a specified level to level 1.\par
+\tab\tab ROLLD\tab\tab Roll Object Down\tab Moves the contents of level 1 to the specified level.\par
+\tab\tab SWAP\tab\tab Swap Level 1 & 2 (2 ROLL)\tab Swaps level 1 and level 2 of the stack.\par
+\tab\tab ROT\tab\tab\tab Rotate Objects (3 ROLL)\tab Rotates the first three objects on the stack, moving the object on level 3 to level 1.\par
+\tab\tab UNROT\tab\tab Rotate Objects Reverse (3 ROLLD)\tab Rotates the first three objects on the stack, moving the object on level 1 to level 3. Opposite of ROT.\par
+\cf1\tab\tab REV\tab\tab\tab Reverse Stack Order\tab Coda Reverse Stack Order Command\cf0\par
+\tab DEPTH\tab\tab\tab Get Stack Depth\tab Returns a real number representing the number of objects present on the stack (before DEPTH was executed).\par
+\par
+\par
+\b Memory\tab\tab\tab Mem\par
+\tab Objects\tab\tab Obj\par
+\tab\tab\b0 STO\tab\tab\tab Store Object\tab Stores an object into a specified variable or object.\par
+\tab\tab RCL\tab\tab\tab Recall Object\tab Returns the unevaluated contents of a specified variable.\par
+\tab\tab PURGE\tab\tab Purge Object\tab Purges the named variables or empty subdirectories from the current directory.\par
+\tab\tab RENAME\tab\tab Rename Object\tab Renames an object to the name that you specify.\b\par
+\tab Directories\tab Dir\b0\par
+\tab\tab UPDIR\tab\tab Up Directory\tab Makes the parent of the current directory the new current directory.\par
+\tab\tab HOME\tab\tab Go to Home Directory\tab Makes the HOME directory the current directory.\par
+\tab\tab PATH\tab\tab\tab Get Directory Path\tab Returns a list specifying the path to the current directory.\par
+\tab\tab CRDIR\tab\tab Create Directory\tab Creates an empty directory with the specified name in the current directory.\par
+\tab\tab DIR\tab\tab\tab Create Directory\tab Creates an empty directory structure in run mode. Alternative to CRDIR.\par
+\tab\tab PGDIR\tab\tab Purge Directory\tab Purges the named directory (whether empty or not).\par
+\tab\tab CLVAR\tab\tab Clear Directory\tab Purges all variables and empty subdirectories in the current directory.\par
+\tab\tab VARS\tab\tab\tab List All Variables\tab Returns a list of the names of all variables in the VAR menu for the current directory.\par
+\tab\tab TVARS\tab\tab List Typed Variables\tab Lists all global variables in the current directory that contain objects of the specified types. \par
+\tab\tab ORDER\tab\tab Order Directory\tab Reorders the variables in the current directory to the order specified.\par
+\tab\b Ports\tab\tab\tab Port\par
+\tab\tab\b0 ATTACH\tab\tab Attach Library\tab Attaches the library with the specified number to the current directory.\par
+\tab\tab DETACH\tab\tab Detach Library\tab Detaches the library with the specified number from the current directory.\par
+\tab\tab LIBS\tab\tab\tab List Libraries\tab Lists the title, number, and port of each library attached to the current directory.\par
+\tab\tab PVARS\tab\tab List Port Variables\tab Returns a list of the backup objects and library objects in the specified port.\par
+\tab\tab PINIT\tab\tab\tab Port Initialize\tab Initializes all currently active ports. \b SHOULD ADD A CONFIRMATION DIALOG.\b0\par
+\tab\b Math\tab\tab\tab Math\b0\par
+\tab\tab STO+\tab\tab\tab Store Add\tab Adds a number or other object to the contents of a specified variable.\par
+\tab\tab STO-\tab\tab\tab Store Minus\tab Calculates the difference between a number and the contents of a specified variable, and stores the new value in the specified variable.\par
+\tab\tab STO*\tab\tab\tab Store Multiply\tab Multiplies the contents of a specified variable by a number or other object.\par
+\tab\tab STO/\tab\tab\tab Store Divide\tab Calculates the quotient of a number (or other object) and the contents of a specified variable, and stores the new value in the specified variable.\par
+\tab\tab INCR\tab\tab\tab Increment Variable\tab Takes a variable, adds 1, stores the new value back into the original variable, and returns the new value.\par
+\tab\tab DECR\tab\tab\tab Decrement Variable\tab Takes a variable, subtracts 1, stores the new value back into the original variable, and returns the new value.\par
+\tab\tab SNEG\tab\tab\tab Store Negative\tab Negates the contents of a named object.\par
+\tab\tab SINV\tab\tab\tab Store Inverse\tab Inverts the contents of a named object.\par
+\tab\tab SCONJ\tab\tab Store Conjugate\tab Conjugates the contents of a named object.\par
+\tab MEM\tab\tab\tab\tab Get Available Memory\tab Returns the number of bytes of available RAM.\par
+\tab BYTES\tab\tab\tab Get Object Size\tab Returns the number of bytes and the checksum for the given object.\par
+\tab ARCHIVE\tab\tab Create Backup\tab Creates a backup copy of the HOME directory, the user-key assignments, and the alarm catalog in the specified backup object.\par
+\tab RESTORE\tab\tab Restore Backup\tab Replaces the current HOME directory with the specified backup copy.\par
+\par
+\par
+\b Branch\tab\tab\tab Brch\tab\tab (These need the programming shortcuts)\par
+\b0\tab IF\tab\tab\tab\tab\tab Conditional Structure\tab Starts IF\'85THEN\'85END and IF\'85THEN\'85ELSE\'85END conditional structures.\par
+\tab THEN\tab\tab\tab\tab Conditional Structure\tab Starts the true-clause in conditional or error-trapping structure.\par
+\tab ELSE\tab\tab\tab\tab Conditional Structure\tab Starts false clause in IF\'85THEN\'85ELSE\'85END conditional or error-trapping structure.\par
+\tab END\tab\tab\tab\tab Conditional / Loop Structure\tab Ends conditional, error-trapping, and indefinite loop structures.\par
+\tab CASE\tab\tab\tab\tab Conditional Structure\tab Starts CASE\'85END conditional structure.\par
+\tab START\tab\tab\tab Definite Loop Structure\tab Begins START\'85NEXT and START\'85STEP definite loop structures.\par
+\tab NEXT\tab\tab\tab\tab Definite Loop Structure\tab Ends FOR\'85NEXT and START\'85NEXT definite loop structures.\par
+\tab STEP\tab\tab\tab\tab Definite Loop Structure\tab Ends the FOR\'85STEP and START\'85STEP definite loop structures.\par
+\tab FOR\tab\tab\tab\tab Definite Loop Structure\tab Starts FOR\'85NEXT and FOR\'85STEP definite loop structures.\par
+\tab DO\tab\tab\tab\tab Indefinite Loop Structure\tab Starts DO\'85UNTIL\'85END indefinite loop structure. DO\'85UNTIL\'85END executes a loop repeatedly until a test returns a true result.\par
+\tab UNTIL\tab\tab\tab\tab Indefinite Loop Structure\tab Starts the test clause in a DO\'85UNTIL\'85END indefinite loop structure.\par
+\tab WHILE\tab\tab\tab Indefinite Loop Structure\tab Starts the WHILE\'85REPEAT\'85END indefinite loop structure. \par
+\tab REPEAT\tab\tab\tab Indefinite Loop Structure\tab Starts loop clause in WHILE\'85REPEAT\'85END indefinite loop structure.\par
+\tab IFT\tab\tab\tab\tab\tab If-Then\tab Executes level 1 object if level 2 is true. Discards object if false.\par
+\tab IFTE\tab\tab\tab\tab If-Then-Else\tab Executes level 2 if level 3 is true. Executes level 1 object if level 3 is false.\par
+\par
+\par
+\b Test\tab\tab\tab\tab Test\b0\par
+\tab ==\tab\tab\tab\tab\tab Logical Equality\tab Tests if two objects are equal.\par
+\tab\u8800?\tab\tab\tab\tab\tab Not Equal\tab Tests if two objects are not equal.\par
+\tab <\tab\tab\tab\tab\tab Less Than\tab Tests whether one object is less than another object.\par
+\tab >\tab\tab\tab\tab\tab Greater Than\tab Tests whether one object is greater than another object.\par
+\tab\u8804?\tab\tab\tab\tab\tab Less Than or Equal\tab Tests whether one object is less than or equal to another object.\par
+\tab\u8805?\tab\tab\tab\tab\tab Greater Than or Equal\tab Tests whether one object is greater than or equal to another object.\par
+\par
+\tab AND\tab\tab\tab\tab Logical AND\tab Returns the logical AND of two arguments.\par
+\tab OR\tab\tab\tab\tab Logical OR\tab Returns the logical OR of two arguments.\par
+\tab XOR\tab\tab\tab\tab Logical XOR\tab Returns the logical exclusive OR of two arguments.\par
+\tab NOT\tab\tab\tab\tab Logical NOT\tab Returns the one's complement or logical inverse of the argument.\par
+\tab SAME\par
+\par
+\par
+\b Type\tab\tab\tab\tab Type\par
+\b0\tab TYPE\tab\tab\tab\tab Get Object Type\tab Returns the type number of an object.\par
+\tab VTYPE\tab\tab\tab Get Variable Contents Type\tab Returns the type number of the object contained in the named variable.\par
+\tab OBJ\u8594?\tab\tab\tab Object to Stack\tab Separates an object into its components.\par
+\tab ARRY\u8594?\tab\tab\tab Array to Stack\tab Takes an array and returns its elements as separate real or complex numbers and returns a list of the dimensions of the array.\par
+\tab\u8594?ARRY\tab\tab\tab Stack to Array\tab Takes real or complex values from the stack and returns a vector or a matrix.\par
+\tab LIST\u8594?\tab\tab\tab List to Stack\tab Takes a list of objects and returns each object to a separate level and returns the total number of objects.\par
+\tab\u8594?LIST\tab\tab\tab Stack to List\tab Takes specified number of objects from the stack and returns a list of those objects.\par
+\tab\u8594?STR\tab\tab\tab Object to String\tab Converts any object to string form.\par
+\tab\u8594?TAG\tab\tab\tab Create Tagged Object\tab Combines objects in levels 1 and 2 to create tagged (labeled) object.\par
+\tab DTAG\tab\tab\tab\tab Delete Tags\tab Removes all tags from an object.\par
+\tab I\u8594?R\tab\tab\tab\tab Integer to Real\tab Converts an integer into a real number.\par
+\tab R\u8594?I\tab\tab\tab\tab Real to Integer\tab Converts a real number into an integer.\par
+\tab\u8594?NUM\tab\tab\tab Evaluate to Number \tab Evaluates a symbolic argument object (other than a list) and returns the numerical result.\par
+\tab XNUM\tab\tab\tab\tab Evaluate to Number\tab Converts an object or a list of objects to 12-digit decimal numeric format. Similar to \u8594?f0 NUM except that \u8594?f0 NUM does not work with lists.\par
+\par
+\par
+\b Error\b0\par
+IFERR\tab Error Conditional Structure\tab Starts IFERR\'85THEN\'85END and IFERR\'85THEN\'85ELSE\'85END error trapping structures.\par
+DOERR\tab Trigger User Error\tab Executes a user-specified error, causing a program to behave exactly as if a normal error had occurred.\par
+ERR0\tab Clear Last Error\tab Clears the last error number so that a subsequent execution of ERRN returns #0h, and clears the last error message.\par
+ERRM\tab Get Last Error Message\tab Returns a string containing the error message of the most recent calculator error.\par
+ERRN\tab Get Last Error Number\tab Returns the error number of the most recent calculator error.\par
+\par
+\par
+\b In\b0\par
+CHOOSE\tab Create Choosebox\tab Creates a user-defined choose box.\par
+PROMPTSTO\tab Prompt for Value\tab Creates a variable with the name supplied as an argument, prompts for a value, and stores the value you enter in the variable.\par
+EQW\tab\tab Equation Writer\tab Puts an object into the Equation Writer, where you can edit an expression.\par
+FILER\tab File Manager\tab Opens File Manager.\par
+INFORM\tab Create Dialog Box\tab Creates a user-defined input form.\par
+NOVAL\tab INFORM Placeholder / Result\tab Placeholder for reset and initial values in user-defined dialog boxes. Returns when fields are empty.\par
+INPUT\tab Get User Input\tab Prompts for data input to the command line and prevents the user access to stack operations.\par
+WAIT\tab\tab Wait\tab Suspends program execution for specified time, or until a key is pressed.\par
+KEY\tab\tab Get Key Press\tab Waits for a key to be pressed and returns the row-column location of that key.\par
+\par
+\par
+\b Out\par
+\b0 TEXT\tab\tab Show Stack\tab Displays the stack display.\par
+PROMPT\tab Display Message & Halt\tab Displays the contents of a string in the status area, and halts program execution.\par
+MSGBOX\tab Display Message Box\tab Displays a user-defined message box.\par
+BEEP\tab Generate Tone\tab Sounds a tone of the given duration and frequency.\par
+CLLCD\tab Clear LCD\tab Clears (blanks) the screen.\par
+\u8594?f0 LCD\tab GROB to LCD\tab Displays the specified graphics object with its upper left pixel in the upper left corner of the display.\par
+DISP\tab\tab Display Text on Specified Line\tab Displays obj in the nth display line.\par
+DISPXY\tab Display Object at Coords.\tab Displays obj at the specified screen coordinates using a specified font size.\par
+FREEZE\tab Freeze Display\tab Freezes the specified part of the display, so that it is not updated until a key is pressed.\par
+SCROLL\tab Display Object\tab Displays any object. This is the programmable equivalent of pressing Tool>View.\par
+\par
+\par
+\b String (missing some here!)\par
+\b0 CHR\tab\tab Get Character\tab Returns the character corresponding to the given character code.\par
+NUM\tab\tab Get Character Number\tab Returns the character code for the first character in the string.\par
+POS\tab\tab Find Position of Character / Element\tab Returns the position of a substring within a string or the position of an object within a list.\par
+HEAD\tab Get First Element\tab Returns the first element of a list or string.\par
+TAIL\tab\tab Last Listed Elements\tab Returns all but the first element of a list or string.\par
+SREPL\tab Find and Replace\tab Finds and replaces a string in a given text object.\par
+STR\u8594?Evaluate String\tab Evaluates the text of a string as if the text were entered from the command line.\par
+SREV\tab Reverse String\tab Gives the mirror image of a string.\par
+MAKESTR\tab Create String\tab Create a string of the given size.\par
+\par
+\par
+\b Grob\par
+\b0 ANIMATE\tab Animate Graphics Objects\tab Displays a series of GROBs in sequence.\par
+BLANK\tab Create Blank Graphics Object\tab Creates a blank graphics object of the specified width and height.\par
+GOR\tab\tab Graphics OR\tab Superimposes a GROB on to another GROB or on to PICT at the specified position.\par
+\u8594?GROB\tab Stack to Graphics Object\tab Creates a graphics object from a specified object.\par
+GROB\tab\tab Enters GROB on the command line to help with the manual entry of a graphic object.\par
+GROBADD\tab Graphics Append\tab Combines two graphic objects by appending the second argument onto the bottom of the first.\par
+GXOR\tab Graphics Exclusive OR\tab Superimposes a GROB onto another or PICT at the specified position.\par
+LCD\u8594?LCD to GROB\tab Returns the current stack and menu display as a 131 x 80 GROB.\par
+\par
+\par
+\b Plot (NEED A SIMPLE PLOT MENU SOMEWHERE ELSE, LIKE MENU 153)\par
+\b0 PVIEW\tab View PICT\tab Displays PICT with the specified coordinate at the upper left corner of the graphics display.\par
+ERASE\tab Erase PICT\tab Erases PICT, leaving a blank PICT of the same dimensions.\par
+PICT\tab\tab PICT Variable\tab Puts the name PICT on the stack.\b\par
+\tab Draw\par
+\tab\b0 LINE\tab Draw Line\tab Draws a line in PICT.\par
+\tab TLINE\tab Toggle Line\tab For each pixel along the line in PICT defined by the specified coordinates, turns off every pixel that is on, and turns on every pixel that is off.\par
+\tab BOX\tab Draw Box\tab Draws a box in PICT.\par
+\tab ARC\tab Draw Arc\tab Draws an arc in PICT.\par
+\tab PIXON\tab Pixel On\tab Turns on the pixel at the specified coordinate in PICT.\par
+\tab PIXOFF\tab Pixel Off\tab Turns off the pixel at the specified coordinate in PICT.\par
+\tab PIX?\tab Pixel On?\tab Tests whether the specified pixel in PICT is on.\par
+\par
+\tab\b Plot\par
+\b0\tab PLOT\tab Plot Expression\tab Stores its argument in EQ and opens the PLOT SETUP screen.\par
+\tab PLOTADD\tab\tab Adds a function to the existing plot function list, and opens the PLOT SETUP screen.\par
+\tab PICTURE\tab View PICT (with Plot Cursor & Menus)\tab Displays PICT. Activates the graphics cursor and Picture menu.\par
+\par
+\tab DRAW\tab Draw Plot\tab Plots the mathematical data in the reserved variable EQ or the statistical data in the reserved variable \u931?f0 DAT.\par
+\tab DRAX\tab Draw Axes\tab Draws axes in PICT. Does not draw axes labels.\par
+\tab LABEL\tab Draw Axes Labels\tab Labels axes in PICT with x- and y-axis variable names and with the minimum and maximum values of the display ranges.\par
+\tab AUTO\tab Autoscale Plot\tab Calculates a y-axis display range, or an x- and y-axis display range.\par
+\tab SCALE\tab Set Plot Scale\tab Sets new plot horizontal and vertical scales. The plot origin does not change.\par
+\tab SCALEH\tab Multiply Height\tab Multiplies the vertical plot scale by a given factor.\par
+\tab SCALEW\tab Multiply Width\tab Multiplies the horizontal plot scale by a given factor.\par
+\tab DRAW3DMATRIX Draw 3D Plot from Matrix\tab Draws a 3D plot from the values in a specified matrix.\par
+\par
+\tab XRNG\tab Set X-Axis Display Range\tab Specifies the x-axis display range.\par
+\tab YRNG\tab Set Y-Axis Display Range\tab Specifies the y-axis display range.\par
+\tab XVOL\tab Set X Volume Coordinates\tab Sets the width of the view volume.\par
+\tab YVOL\tab Set Y Volume Coordinates\tab Sets the depth of the view volume.\par
+\tab ZVOL\tab Set Z Volume Coordinates\tab Sets the height of the view volume.\par
+\tab XXRNG\tab Set X Range of an Input Plane\tab Specifies the x range of an input plane (domain) for GRIDMAP and PARSURFACE plots.\par
+\tab YYRNG\tab Set Y Range of an Input Plane\tab Specifies the y range of an input plane (domain) for GRIDMAP and PARSURFACE plots.\par
+\par
+\tab\b Plot Settings\b0\par
+\tab ATICK\tab Set Axes Tick-Mark Interval\tab Sets the interval of the axes tick-marks in the reserved variable PPAR.\par
+\tab AXES\tab Set Axes Settings\tab Sets the intersection coordinates of the axes, tick-mark interval, and the axes labels.\par
+\tab CENTR\tab Set Plot Centre Point\tab Sets the origin of the plot to the point represented by the argument (x,y).\par
+\tab DEPND\tab Set Dependent Variable\tab Sets the dependent variable (and its plotting range for TRUTH plots).\par
+\tab EYEPT\tab Set Eye Point\tab Sets the coordinates of the eye point in a perspective plot.\par
+\tab INDEP\tab Set Independent Variable\tab Sets the independent variable and its plotting range.\par
+\tab NUMX\tab Number of X-Steps\tab Sets the number of x-steps for each y-step in 3D perspective plots.\par
+\tab NUMY\tab Number of Y-Steps\tab Sets the number of y-steps across the view volume in 3D perspective plots.\par
+\tab PDIM\tab Set PICT Dimensions\tab Sets the coordinates of the upper right corner and lower left corner of the display.\par
+\tab PMAX\tab Set PICT Maximum\tab Sets (x, y) as the coordinates at the upper right corner of the display.\par
+\tab PMIN\tab Set PICT Minimum\tab Sets (x, y) as the coordinates at the lower left corner of the display.\par
+\tab RES\tab Set Plot Resolution\tab Specifies the resolution of mathematical and statistical plots.\par
+\par
+\b\tab Plot Type\b0\par
+\tab BAR\tab Set Plot Type to Bar\tab Sets the plot type to BAR.\par
+\tab CONIC\tab Set Plot Type to Conic\tab Sets the plot type to CONIC.\par
+\tab DIFFEQ\tab Set Plot Type to Diff. Eq.\tab Sets the plot type to DIFFEQ.\par
+\tab FAST3D\tab Set Plot Type to Fast 3D\tab Sets the plot type to FAST 3D.\par
+\tab FUNCTION\tab Set Plot Type to Function\tab Sets the plot type to FUNCTION.\par
+\tab GRIDMAP\tab Set Plot Type to Gridmap\tab Sets the plot type to GRIDMAP.\par
+\tab HISTOGRAM\tab Set Plot Type to Histogram\tab Sets the plot type to HISTOGRAM.\par
+\tab PARAMETRIC\tab Set Plot Type to Parametric\tab Sets the plot type to PARAMETRIC.\par
+\tab PARSURFACE\tab Set Plot Type to Parsurface\tab Sets the plot type to PARSURFACE.\par
+\tab PCONTOUR\tab Set Plot Type to PCountour\tab Sets the plot type to PCONTOUR.\par
+\tab POLAR\tab Set Plot Type to Polar\tab Sets the plot type to POLAR.\par
+\tab SCATTER\tab Set Plot Type to Scatter\tab Sets the plot type to SCATTER.\par
+\tab SLOPEFIELD\tab Set Plot Type to Slopefield\tab Sets the plot type to SLOPEFIELD.\par
+\tab TRUTH\tab Set Plot Type to Truth\tab Sets the plot type to TRUTH.\par
+\tab WIREFRAME\tab Set Plot Type to Wireframe\tab Sets the plot type to WIREFRAME.\par
+\tab YSLICE\tab Set Plot Type to Y-Slice.\tab Sets the plot type to YSLICE.\par
+C\u8594?PX\tab Complex to Pixel Coordinates\tab Converts the specified user-unit coordinates to pixel coordinates.\par
+PX\u8594?C\tab Pixel to Complex Coordinates\tab Converts the specified pixel coordinates to user-unit coordinates.\par
+\par
+\par
+\b IO\par
+\b0\tab\b Xmodem\par
+\b0\tab XRECV\tab XModem Receive\tab Waits to receive an object via XModem.\b\par
+\tab\b0 XSEND\tab XModem Send\tab Sends a copy of the named object via XModem.\b\par
+\tab\b0 XGET\tab XModem Get\tab Retrieves a specified filename via XMODEM from another calculator running in server mode.\par
+\tab XPUT\tab XModem Send\tab Sends a specified filename via XMODEM to another calculator running in server mode.\b\par
+\b0\tab XSERV\tab XModem Server\tab Puts the calculator in Xmodem server mode.\par
+\par
+\par
+\tab\b Basic Serial\par
+\tab\b0 XMIT\tab Serial Transmit\tab Sends a string serially without using Kermit protocol, and returns a single digit that indicates whether the transmission was successful.\b\par
+\b0\tab SRECV\tab Serial Receive\tab Reads characters from the serial input buffer and returns them as a string.\par
+\tab SBRK\tab Serial Break\tab Interrupts serial transmission or reception.\par
+\tab BUFLEN\tab Serial Get Buffer Length\tab Returns the number of characters in the serial input buffer and whether an error occurred during data reception.\par
+\tab OPENIO\tab Serial Port Open\tab Opens a serial port using the I/O parameters in the reserved variable IOPAR.\par
+\tab CLOSEIO\tab Serial Port Close\tab Closes the serial port, and clears the input buffer and any error messages for KERRM.\b\par
+\par
+\tab Kermit\par
+\b0\tab SEND\tab Kermit Send Object\tab Sends a copy of the named objects to a Kermit device.\par
+\tab RECV\tab Kermit Receive Object\tab Waits to receive a file from a Kermit server device, and stores the file in the variable specified by the sender.\par
+\tab RECN\tab Kermit Receive Named Object\tab Waits to receive a file from a Kermit server device, and stores the file in the user specified variable.\par
+\tab SERVER\tab Kermit Start Server Mode\tab Selects Kermit Server mode.\par
+\tab KGET\tab Kermit Get Remote Object\tab Tells a Kermit server to transmit the named object(s).\par
+\tab FINISH\tab Kermit Stop Remote Server\tab Tells a Kermit server to terminate server mode.\par
+\tab PKT\tab Kermit Send Command Packet\tab Sends command "packets" (and receive requested data) to a Kermit server.\par
+\tab KERRM\tab Kermit Get Error Message\tab Returns the text of the most recent Kermit error packet.\par
+\tab\par
+\tab\b IO Settings\b0\par
+\tab BAUD\tab Set Baud Rate\tab Sets bit-transfer rate.\par
+\tab CKSM\tab Set Checksum Method\tab Sets the error-detection scheme.\par
+\tab PARITY\tab Set Parity Method\tab Sets the parity method.\par
+\tab STIME\tab Set Serial Time-Out\tab Sets the period that SRECV (serial reception) and XMIT (serial transmission) wait before timing out.\par
+\tab TRANSIO\tab Set Translation Method\tab Specifies the character translation option.\par
+\par
+\tab\b Printing\par
+\tab\b0 PR1\tab Print Stack Level 1\tab Prints the level 1 object in multiline printer format.\par
+\tab PRST\tab Print Stack\tab Prints all objects in the stack, starting with the object on the highest level.\par
+\tab PRSTC\tab Print Stack (Compact)\tab Prints in compact form all objects in the stack, starting with the object on the highest level.\par
+\tab PRLCD\tab Print LCD\tab Prints a pixel-by-pixel image of the current display (excluding the annunciators).\par
+\tab PRVAR\tab Print Variable List\tab Searches the current directory path or port for the specified variables and prints the name and contents of each variable.\par
+\tab CR\tab Carriage Right\tab Prints the contents, if any, of the printer buffer.\par
+\tab DELAY\tab Set Transmit Delay\tab Specifies how many seconds to wait between sending lines of information to the printer.\par
+\tab OLDPRT\tab Old Printer Compatibility\tab Modifies PRTPAR to be compatible with the old HP82240A infrared printer.\par
+\i Also, IOPAR settings menu (106.01), PRTPAR retrieval button.\i0\par
+\par
+\par
+\b Run\par
+\b0 CONT\tab Continue Program\tab Resumes execution of a halted program.\b\par
+\b0 DBUG\tab Debug Program\tab Starts program execution, then suspends it as if HALT were the first program command.\par
+HALT\tab\tab Halt Program\tab Halts program execution.\par
+KILL\tab\tab Cancel Halted Programs\tab Cancels all currently halted programs and the current program.\par
+TEVAL\tab Timed Evaluation\tab For the specified operation, performs the same function as EVAL, and returns the time taken to perform the evaluation as well as the result.\par
+OFF\tab\tab Power Off\tab Turns off the calculator.\par
+\par
+\par
+\b Development\par
+\b0 ASM2\par
+\u8594?S2\tab\tab Decompile Object\tab Decompile an object in System RPL mode.\par
+ASM\par
+ER\par
+\tab\b Hex\b0\par
+\tab H\u8594?Hex to Object\tab Returns the object represented by a hex string. If the string does not describe a valid object, MEMORY CORRUPTION CAN OCCUR!\par
+\tab\u8594?H\tab Object to Hex\tab Returns the hex representation of a object.\par
+\tab H\u8594?S\tab Hex to String\tab Returns the string whose data are represented by a hex string.\par
+\tab S\u8594?H\tab String to Hex\tab Returns the hex representation of the characters of a string.\par
+\tab CD\u8594?Code to Hex\tab Returns the hex representation of a code (Assembly program) object. \par
+\tab\u8594?CD\tab Hex to Code\tab Returns the code (Assembly program) object represented by an hex string.\par
+\par
+\tab\b Memory\b0\par
+\tab APEEK\tab Address Peek\tab Read the address stored at an address.\par
+\tab PEEK\tab Memory Read\tab Reads nibbles from a specified address in memory.\par
+\tab POKE\tab Memory Write\tab Writes nibbles to a specified address in memory.\par
+\tab PEEKARM\tab Memory Read ARM\tab Reads nibbles from a specified address in memory in the ARM address space.\par
+\tab POKEARM\tab Memory Write ARM\tab Writes nibbles to a specified address in memory in the ARM address space.\par
+\tab A\u8594?Get Object at Address\tab Returns the object stored at a specific address.\par
+\tab\u8594?A\tab Get Address of Object\tab Returns the address of an object.\par
+\tab A\u8594?H\tab Address to Hex String\tab Returns the hex representation of an address (you can then use this with the POKE command).\par
+\tab H\u8594?A\tab Hex String to Address\tab Returns the address represented by a 5 character hex string.\par
+\tab\u8594?RAM\tab Create Copy of Object in Memory\tab This command makes a copy of an object in RAM, wherever the object is. This commands allows you to copy a ROM object in RAM. (Improved NEWOB.)\par
+\tab NEWOB\tab Create Copy of Object in Memory\tab Creates a new copy of the specified object in memory. (Not really applicable on newer calcs.)\par
+FLASHEVAL\tab Evaluate Flash Function\tab Evaluates unnamed Flash functions.\par
+LIBEVAL\tab Evaluate Library Function\tab Evaluates unnamed library functions.\par
+SYSEVAL\tab Evaluate System Function\tab Evaluates unnamed operating system objects specified by their memory addresses.\b\par
+}
+ 

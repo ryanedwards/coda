@@ -1,0 +1,18 @@
+CodaHP
+Ryan Edwards <ryan@ryangedwards.com>
+-------------------------------------------------------------------------------
+
+This is the beginnings of a more usable menu system for the HP49/50 series of
+graphing calculators from HP.
+
+This software is written using the excellent, free development system Debug4x
+(http://www.debug4x.com/).
+
+Requirements
+------------
+The calculator must have the following libraries installed:
+ * Keyman
+ * Headman
+ * Timeman
+ * Emacs (including SDIAG)
+ 

@@ -1,0 +1,137 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\f0\fs20 \cf0 COL
+\f1 \uc0\u931 		
+\f0 Set Column Sigma	Specifies the independent-variable and dependent-variable columns of the current statistics matrix.\
+\
+\
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\b \cf0 Data\
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 \uc0\u931 
+\f0 +		Add Statistical Data	Adds one or more data points to the current statistics matrix.\
+
+\f1 \uc0\u931 
+\f0 -		Remove Statistical Data	Removes the last set of data points in the current statistics matrix. The data set is returned to the stack.\
+STO
+\f1 \uc0\u931 		
+\f0 Store Statistical Data	Stores a matrix as the current statistical matrix.\
+RCL
+\f1 \uc0\u931 		
+\f0 Recall Statistical Data	Returns the current statistical matrix.\
+CL
+\f1 \uc0\u931 		
+\f0 Purge Statistical Data	Purges the current statistics matrix (reserved variable 
+\f1 \uc0\u931 
+\f0 DAT).\
+
+\f1 \uc0\u931 
+\f0 DAT		
+\i Typing Aid
+\i0\b \
+\
+\
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\f1 \cf0 \uc0\u931 
+\f0 PAR (see MENU 98)\
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\b0 \cf0 XCOL	Set Independent Column	Specifies the independent-variable column of the current statistics matrix.
+\b \
+
+\b0 YCOL	Set Dependent Column	Specifies the dependent variable column of the current statistics matrix.
+\b \
+	Model\
+	
+\b0 BESTFIT	Set Best-Fitting Model	Executes LR with each of the four curve fitting models, and selects the model yielding the largest correlation coefficient.\
+	EXPFIT	Set Exponential Curve Fit	Stores EXPFIT as the fifth parameter in the reserved variable 
+\f1 \uc0\u931 
+\f0 PAR.\
+	LINFIT	Set Linear Curve Fit	Stores LINFIT as the fifth parameter in the reserved variable 
+\f1 \uc0\u931 
+\f0 PAR\
+	LOGFIT	Set Logarithmic Curve Fit	Stores LOGFIT as the fifth parameter in the reserved variable 
+\f1 \uc0\u931 
+\f0 PAR.\
+	PWRFIT	Set Power Curve Fit	Stores PWRFIT as the fifth parameter in the reserved variable 
+\f1 \uc0\u931 
+\f0 PAR.
+\b \
+	\
+\
+1Var\
+
+\b0 TOT		Column Total	Computes the sum of each column in the current statistics matrix.\
+MEAN	Column Mean Value	Returns the mean value of each column of the statistical matrix.\
+SDEV	Standard Deviation	Calculates the sample standard deviation of each of the columns of coordinate values in the current statistics matrix.\
+MAX
+\f1 \uc0\u931 	
+\f0 Column Maximum Value	Returns the maximum value of each column of the statistical matrix.\
+MIN
+\f1 \uc0\u931 		
+\f0 Column Minimum Value	Returns the minimum value of each column of the statistical matrix.\
+BINS		Sort into Frequency Bins	Sorts the elements of the independent column (XCOL) of the current statistics matrix into bins, where the left edge of bin 1 starts at value xmin and each bin has width xwidth.\
+VAR		Column Variance	Calculates the sample variance of each column in the current statistics matrix.\
+PSDEV	Column Population Standard Dev.	Calculates the population standard deviation of each column of the current statistics matrix.\
+PVAR	Column Population Variance	Calculates the population variance of each column in the current statistics matrix.\
+NDIST	Normal Distribution	Returns the normal probability distribution (bell curve) at x based on the mean and variance of the normal distribution.
+\b \
+\
+\
+Plot (Plots that use 
+\f1 \uc0\u931 
+\f0 DAT)\
+
+\b0 BARPLOT	Draw Bar Plot	Plots a bar chart of the specified column of the current statistics matrix.\
+HISTPLOT	Draw Histogram Plot	Plots a frequency histogram of the specified column in the current statistics matrix.\
+SCATRPLOT	Draw Scatter Plot	Draws a scatterplot of (x, y) data points from the specified columns of the current statistics matrix.\
+SCL
+\f1 \uc0\u931 		
+\f0 Scale Sigma	Adjusts PPAR so that a subsequent scatter plot exactly fills PICT.\
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\b \cf0 \
+\
+Fit\
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 \uc0\u931 
+\f0 LINE	Get Regression Model Formula	Returns an expression representing the best fit line according to the current statistical model.\
+LR		Linear Regression	Calculates the linear regression coefficients (intercept and slope) using the current statistical model and the current statistics data.\
+PREDX	Predicted x-Value	Returns the predicted independent-variable value x, based on the dependent-variable value y and the current statistics data.\
+PREDY	Predicted y-Value	Returns the predicted dependent-variable value y, based on the independent-variable value x and the current statistics data.\
+CORR	Get Correlation	Returns the correlation coefficient of the independent and dependent data columns in the current statistics matrix.\
+COV		Get Covariance	Returns the sample covariance of the independent and dependent data columns in the current statistics matrix.\
+PCOV	Get Population Covariance	Returns the population covariance of the independent and dependent data columns in the current statistics matrix.\
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\b \cf0 \
+\
+Sums\
+\pard\tx540\tx2160\tx5760\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 \uc0\u931 
+\f0 X		Sum of X-Values	Sums the values in the independent-variable column of the current statistical matrix.\
+
+\f1 \uc0\u931 
+\f0 Y		Sum of Y-Values	Sums the values in the dependent variable column of the current statistical matrix.\
+
+\f1 \uc0\u931 
+\f0 X2		Sum of Squares of Y-Values	Sums the squares of the values in the independent-variable column of the current statistical matrix.\
+
+\f1 \uc0\u931 
+\f0 Y2		Sum of Squares of Y-Values	Sums the squares of the values in the dependent-variable columns of the current statistical matrix.\
+
+\f1 \uc0\u931 
+\f0 XY		Sum of X times Y	Sums the products of each of the corresponding values in the independent- and dependent-variable columns of the current statistical matrix.\
+N
+\f1 \uc0\u931 		
+\f0 Get Number of Rows	Returns the number of rows in the current statistical matrix.
+\b \
+}

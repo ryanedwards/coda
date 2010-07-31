@@ -1,0 +1,115 @@
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\tx284\tx568\tx852\tx1136\tx2840\tx4544\tx7952\lang1033\b\f0\fs22 Command\tab\tab Menu Item\tab Action\tab Command Details\par
+\fs20 Create\par
+\b0\tab CON\tab\tab\tab\tab Create Constant Matrix\tab Returns a constant array, defined as an array whose elements all have the same value.\par
+\tab IDN\tab\tab\tab\tab Create Identity Matrix\tab Returns an identity matrix of the given size.\par
+\tab RANM\tab\tab\tab Create Random Matrix\tab Returns a matrix of specified dimensions that contains random integers in the range -9 through 9.\par
+\tab HILBERT\tab\tab\tab Create Hilbert Matrix\tab Returns a square Hilbert matrix of the specified order.\par
+\tab VANDERMONDE\tab\tab Create Vandermonde Matrix\tab Builds the Vandermonde matrix (also called the alternant matrix) from a list of objects.\par
+\par
+RDM\tab\tab\tab\tab\tab Redimension Matrix\tab Resizes the given array to the specified dimensions.\par
+\par
+AUGMENT\tab\tab\tab List/Vector Concatenate\tab Concatenate lists or vectors with elements, or create matrices from row vectors.\par
+\u8594?DIAG\tab\tab\tab\tab Matrix Diagonal to Vector\tab Returns a vector which contains the major diagonal elements of a matrix.\par
+DIAG\u8594?\tab\tab\tab\tab Vector to Matrix Diagonal\tab Takes an array and a specified dimension and returns a matrix whose major diagonal elements are the elements of the array.\par
+LCXM\tab\tab\tab\tab\tab Create Matrix from Program\tab From a program with two arguments, builds a matrix with the specified number of rows and columns, with aij = f(i,j).\par
+\par
+\b Element\b0\par
+\tab GET\tab\tab\tab\tab Get Element\tab Returns the specified element from an array or list.\par
+\tab GETI\tab\tab\tab\tab Get Element & Increment Index\tab Returns the specified element from an array or list, a copy of the array or list and the index of the element after the specified one.\par
+\tab PUT\tab\tab\tab\tab Put Element\tab Replaces the object at the specified position in the specified array or list with the given object.\par
+\tab PUTI\tab\tab\tab\tab Put Element & Increment Index\tab Replaces the object at the specified position in an array or list with a given object. Returns the new array, and the index of the next position in the array or list.\par
+\par
+\b Row\par
+\tab\b0 RSWP\tab\tab\tab Row Swap\tab Swaps two rows of a matrix and returns the modified matrix.\par
+\tab ROW+\tab\tab\tab Insert Row\tab Inserts an array into a matrix (or one or more numbers into a vector) at the specified position.\par
+\tab ROW-\tab\tab\tab\tab Delete Row \tab Deletes specified row of a matrix.\par
+\tab\u8594?ROW\tab\tab\tab Matrix to Rows\tab Transforms a matrix into a series of row vectors, returning the vectors and row count.\par
+\tab ROW\u8594?\tab\tab\tab Rows to Matrix\tab Transforms a series of row vectors and a row count into a matrix containing those rows.\b\par
+\tab\b0 RCI\tab\tab\tab\tab Multiply Row by Constant\tab Multiplies row of a matrix by a constant, and returns the modified matrix.\par
+\tab RCIJ\tab\tab\tab\tab Multiply Row by Constant, Add to Row\tab Multiplies row of a matrix by a constant, adds this product to the other given row, and returns the modified matrix.\b\par
+\par
+Col\b0\par
+\tab CSWP\tab\tab\tab Column Swap\tab Swaps columns i and j of the argument matrix and returns the modified matrix.\par
+\tab COL+\tab\tab\tab\tab Insert Column\tab Inserts an array (vector or matrix) into a matrix at the specified position.\par
+\tab COL-\tab\tab\tab\tab Delete Column\tab Deletes specified column of a matrix.\par
+\tab\u8594?COL\tab\tab\tab Matrix to Columns\tab Transforms a matrix into a series of column vectors and returns the vectors and a column count.\par
+\tab COL\u8594?\tab\tab\tab Columns to Matrix\tab Transforms a series of column vectors and a column count into a matrix containing those columns.\par
+\tab\par
+\par
+\b Operations\par
+\b0\tab AXL\tab\tab\tab\tab Convert List<->Array\tab Convert a list to an array, or an array to a list.\par
+\tab AXM\tab\tab\tab\tab Numeric Array<->Symbolic Matrix\tab Convert a numeric array to a symbolic matrix, or a symbolic matrix to a numeric array.\par
+\par
+\tab TRAN\tab\tab\tab\tab Transpose Matrix\tab Returns the transpose of a matrix.\par
+\tab TRN\tab\tab\tab\tab Transpose Matrix \tab Returns the transpose of a matrix. Conjugates complex numbers.\par
+\par
+\tab DET\tab\tab\tab\tab Determinant\tab Returns the determinant of a square matrix.\par
+\tab CNRM\tab\tab\tab Column Norm\tab Returns the column norm (one-norm) of the given matrix\par
+\tab RNRM\tab\tab\tab Row Norm\tab Returns the row norm (infinity norm) of the given matrix.\par
+\tab SNRM\tab\tab\tab Spectral Norm\tab Returns the spectral norm of the given matrix.\par
+\tab SRAD\tab\tab\tab\tab Spectral Radius\tab Returns the spectral radius of a square matrix.\par
+\tab COND\tab\tab\tab\tab Condition Number\tab Returns the 1-norm (column norm) condition number of a square matrix.\par
+\tab RANK\tab\tab\tab\tab Matrix Rank\tab Returns the rank of a rectangular matrix.\par
+\tab TRACE\tab\tab\tab Matrix Trace\tab Returns the trace of a square matrix.  (The trace of a square matrix is the sum of its diagonal elements.)\par
+\par
+\tab HADAMARD\tab\tab Hadamard Product\tab Performs an element by element multiplication of two matrices.\par
+\tab LSQ\tab\tab\tab\tab Least Squares Solution\tab Returns the minimum norm least squares solution to any system of linear equations.\par
+\tab MAD\tab\tab\tab\tab Square Matrix Details\tab Returns details of a square matrix (determinant, formal inverse, characteristic polynomial, etc.)\par
+\tab RSD\tab\tab\tab\tab Residual\tab Computes the residual B-AZ of the arrays B, A, and Z.\par
+\par
+\par
+\b Fact (Factorizations)\b0\par
+\tab LQ\tab\tab\tab\tab\tab LQ Factorization\tab Returns the LQ factorization of a matrix.\par
+\tab LU\tab\tab\tab\tab\tab LU Decomposition\tab Returns the LU decomposition of a square matrix.\par
+\tab QR\tab\tab\tab\tab QR Factorization\tab Returns the QR factorization of a matrix.\par
+\tab qr\tab\tab\tab\tab\tab qr Factorization\tab Returns the qr factorization of a square matrix.\par
+\tab SCHUR\tab\tab\tab Schur Decomposition\tab Returns the Schur decomposition of a square matrix.\par
+\tab SVD\tab\tab\tab\tab Singular Value Decomposition\tab Returns the singular value decomposition of a matrix.\par
+\tab SVL\tab\tab\tab\tab Singular Values\tab Returns the singular values of a matrix.\par
+\par
+\par
+\b Quad (Quadratic Form)\par
+\b0\tab AXQ\tab\tab\tab\tab Matrix Form to Quadratic Form\tab Returns the quadratic form of a given square matrix.\par
+\tab QXA\tab\tab\tab\tab Quadratic Form to Matrix Form\tab Express a quadratic form in matrix form.\par
+\tab CHOLESKY\tab\tab Cholesky Decomposition\tab Returns the Cholesky factorization of a square matrix.\par
+\tab GAUSS\tab\tab\tab Gaussian Symbolic Quadratic Form\tab Return the diagonal representation of a quadratic form.\par
+\tab SYLVESTER\tab\tab Sylvester Matrix\tab For a symmetric matrix A, returns D and P where D is a diagonal matrix and A = PTDP.\par
+\par
+\par
+\b L.Sys (Linear Systems)\b0\par
+\i\tab LINSOLVE\i0\tab\tab\tab\i Also in solve menu.\i0\par
+\tab REF\tab\tab\tab\tab Row Echelon Form\tab Reduces a matrix to row echelon form. (Gauss Elimination)\par
+\tab RREF\tab\tab\tab\tab Reduced Row Echelon Form\tab Reduces a matrix to reduced row echelon form. (Gauss-Jordan Elimination)\par
+\tab rref\tab\tab\tab\tab\tab Reduced Row Echelon Form (w/Pivots)\tab Reduces a matrix to reduced row echelon form, and provides a list of pivot points. (Gauss-Jordan Elimination)\par
+\tab SYST2MAT\tab\tab Linear System to Matrix\tab Converts a system of linear equations in algebraic form to matrix form.\par
+\par
+\par
+\b L.App (Linear Applications)\par
+\b0\tab IMAGE\tab\tab\tab\tab Computes the basis of the image (also called the range) of a linear application.\par
+\tab ISOM\tab\tab\tab\tab\tab Determine the characteristics of a 2D or 3D linear isometry.\par
+\tab KER\tab\tab\tab\tab\tab Computes the basis of the kernel of a linear application.\par
+\tab MKISOM\tab\tab\tab\tab Returns the matrix representation for a given isometry.\par
+\par
+\par
+\b Eigenvectors\par
+\b0\tab DIAGMAP\tab\tab\tab Applies an holomorphic operator to a diagonalizable matrix.\b\par
+\b0\tab EGV\tab\tab\tab\tab Eigenvalues & Eigenvectors\tab Computes the eigenvalues and right eigenvectors for a square matrix.\par
+\tab EGVL\tab\tab\tab\tab Eigenvalues\tab Computes the eigenvalues of a square matrix.\par
+\tab JORDAN\tab\tab\tab Jordan Cycle Decomposition\tab Computes the eigenvalues, eigenvectors, minimum polynomial, and characteristic polynomial of a matrix.\par
+\tab PCAR\tab\tab\tab\tab\tab Returns the characteristic polynomial of an square matrix.\par
+\tab PMINI\tab\tab\tab\tab\tab Finds the minimal polynomial of a matrix.\par
+\par
+\par
+\b Vector\b0\par
+\tab DOT\tab\tab\tab\tab Dot Product\tab Returns the dot product A\bullet B of two arrays A and B.\par
+\tab CROSS\tab\tab\tab Cross Product\tab Returns the cross product C = A x B of vectors A and B.\par
+\tab V\u8594?\tab\tab\tab\tab Vector / Complex Number to Stack\tab Separates a vector or complex number into its component elements (depends on flag -19).\par
+\tab\u8594?V2\tab\tab\tab\tab Stack to Vector / Complex Number\tab Converts two specified numbers into a 2-element vector or a complex number (depends on flag -19).\par
+\tab\u8594?V3\tab\tab\tab\tab Stack to 3-Element Vector\tab Converts three numbers into a 3-element vector.\par
+\par
+GRAMSCHMIDT\tab\tab\tab Finds an orthonormal base of a vector space with respect to a given scalar product.\par
+BASIS\tab\tab\tab\tab\tab Given a list of vectors defining a vector sub-space of Rn, returns a list containing the vectors of a basis of the vector sub-space.\par
+IBASIS\tab\tab\tab\tab\tab Determines the basis of the intersection between two vector spaces.\par
+}
+ 
