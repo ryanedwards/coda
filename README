@@ -1,18 +1,23 @@
-CodaHP
+Coda for HP 49+/50g Calculators
 Ryan Edwards <ryan@ryangedwards.com>
 -------------------------------------------------------------------------------
-
-This is the beginnings of a more usable menu system for the HP49/50 series of
-graphing calculators from HP.
+This is the beginnings of a more usable menu system for the HP 49+/50 series of
+graphing calculators.
 
 This software is written using the excellent, free development system Debug4x
 (http://www.debug4x.com/).
 
-Requirements
-------------
+Required Libraries
+------------------
 The calculator must have the following libraries installed:
- * Keyman
- * Headman
- * Timeman
- * Emacs (including SDIAG)
+ * Keyman+ 5.2004
+ * Headman 4.2004
+ * Timeman 1.2005
+ * Emacs 2.11a
+ * SDiag 2.11
+
+Suggested Libraries
+-------------------
+ * Unitman 9.2004
+ * HLP49 v5.1
  
