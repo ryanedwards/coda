@@ -9,7 +9,7 @@ UseDefaultEntryList=1
 WarnRamChanges=0
 LoadOnly=0
 EMUVisible=0
-ProjectTab=1
+ProjectTab=4
 InformHeight=66
 EntryPointList=
 Title=Coda : Interface Enhancer
@@ -52,3 +52,5 @@ file22=Time.s
 file23=Misc.s
 file24=Tools.s
 file25=AsnKeys.s
+[Edit]
+edit26=>Handlers.s
