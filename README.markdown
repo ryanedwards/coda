@@ -1,3 +1,5 @@
+A note from 2022 Future Ryan: This project is not under development. It's a relic from the era before smartphones, when my beloved HP 50g was the pinnacle of calculator technology. This was my attempt to "modernize" the interface that was ported largely-unchanged from the much older HP 48 series.
+
 Coda for HP 49g+/50g Calculators
 ================================
 Copyright (C) 2007-2011 Ryan Edwards <ryan@ryangedwards.com>
